@@ -1,0 +1,30 @@
+# AWS region for resources
+region = "ap-south-1"
+
+# VPC and Subnet configuration
+vpc_cidr          = "10.0.0.0/16"
+subnet_cidr       = "10.0.1.0/24"
+availability_zone = "ap-south-1a"
+
+# EC2 instance configuration
+instance_type = "t3.micro"
+key_name      = "internship-key"
+
+# S3 bucket configuration
+bucket_name = "malavika-internship-bucket-2026"
+
+# Security group configuration (your IP for SSH)
+ssh_ip = "36.255.14.130/32"
+
+# SNS Alerts and Billing Notification Email
+alert_email = "malavika.jayaraj@gmail.com"
+
+# Budget configuration
+budget_amount = "5.0"
+
+# Common tags applied to all resources
+common_tags = {
+  Project = "InternshipAWS"
+  Env     = "Demo"
+  Owner   = "Malavika"
+}
